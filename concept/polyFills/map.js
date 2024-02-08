@@ -9,3 +9,4 @@ Array.prototype.myMap = function (callbackFn) {
 
 let arr = [1, 2, 3];
 console.log(arr.map((value, index) => value + index));
+console.log(arr.myMap((value, index) => value + index));
