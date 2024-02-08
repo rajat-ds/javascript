@@ -7,3 +7,7 @@ Array.prototype.myFilter = function (callbackFn) {
   }
   return results;
 };
+
+const arr = [1,2,3,4]
+console.log(  arr.filter(el=>el%2==0)  )
+console.log(  arr.myFilter(el=>el%2==0)  )
