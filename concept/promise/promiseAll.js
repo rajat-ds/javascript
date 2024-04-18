@@ -45,7 +45,7 @@ Promise.myAll = function (arr) {
   let total = 0;
   return new Promise((resolve, reject) => {
     for (let i = 0; i < arr.length; i++) {
-      arr[i]
+      arr[i]()
         .then((res) => {
           result[i] = res;
           if (++total === arr.length) resolve(result);
